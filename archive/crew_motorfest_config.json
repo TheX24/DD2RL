@@ -1,0 +1,132 @@
+{
+  "game": "The Crew Motorfest",
+  "description": "Auto-generated from Bindings_Keyboard.xml - Maps keyboard to Xbox controller",
+  "keyboard_to_drunkdeer": {
+    "Z": "W",
+    "Q": "A",
+    "D": "D",
+    "S": "S",
+    "SPACE": "SPACE",
+    "LEFT": "ARR_L",
+    "RIGHT": "ARR_R",
+    "UP": "ARR_UP",
+    "DOWN": "ARR_DW",
+    "LSHIFT": "SHF_L",
+    "E": "E",
+    "A": "A",
+    "H": "H",
+    "R": "R",
+    "F": "F",
+    "V": "V",
+    "X": "X",
+    "ESCAPE": "ESC"
+  },
+  "controller_mappings": {
+    "analog": {
+      "RoadThrottle": {
+        "keyboard_key": "Z",
+        "drunkdeer_key": "W",
+        "controller": "RIGHT_TRIGGER",
+        "description": "Throttle/Accelerate"
+      },
+      "RoadBrake": {
+        "keyboard_key": "S",
+        "drunkdeer_key": "S",
+        "controller": "LEFT_TRIGGER",
+        "description": "Brake"
+      },
+      "RoadSteerLeft": {
+        "keyboard_key": "Q",
+        "drunkdeer_key": "A",
+        "controller": "LEFT_STICK_X_NEGATIVE",
+        "description": "Steer Left"
+      },
+      "RoadSteerRight": {
+        "keyboard_key": "D",
+        "drunkdeer_key": "D",
+        "controller": "LEFT_STICK_X_POSITIVE",
+        "description": "Steer Right"
+      },
+      "LookLeft": {
+        "keyboard_key": "LEFT",
+        "drunkdeer_key": "ARR_L",
+        "controller": "RIGHT_STICK_X_NEGATIVE",
+        "description": "Camera Left"
+      },
+      "LookRight": {
+        "keyboard_key": "RIGHT",
+        "drunkdeer_key": "ARR_R",
+        "controller": "RIGHT_STICK_X_POSITIVE",
+        "description": "Camera Right"
+      },
+      "LookUp": {
+        "keyboard_key": "UP",
+        "drunkdeer_key": "ARR_UP",
+        "controller": "RIGHT_STICK_Y_POSITIVE",
+        "description": "Camera Up"
+      },
+      "LookDown": {
+        "keyboard_key": "DOWN",
+        "drunkdeer_key": "ARR_DW",
+        "controller": "RIGHT_STICK_Y_NEGATIVE",
+        "description": "Camera Down"
+      }
+    },
+    "buttons": {
+      "RoadHandBrake": {
+        "keyboard_key": "SPACE",
+        "drunkdeer_key": "SPACE",
+        "controller": "A_BUTTON",
+        "description": "Handbrake / E-Brake"
+      },
+      "Nitro": {
+        "keyboard_key": "LSHIFT",
+        "drunkdeer_key": "SHF_L",
+        "controller": "B_BUTTON",
+        "description": "Nitro Boost"
+      },
+      "RoadGearDown": {
+        "keyboard_key": "A",
+        "drunkdeer_key": "A",
+        "controller": "X_BUTTON",
+        "description": "Shift Down"
+      },
+      "RoadGearUp": {
+        "keyboard_key": "E",
+        "drunkdeer_key": "E",
+        "controller": "Y_BUTTON",
+        "description": "Shift Up"
+      },
+      "BackOnTrack": {
+        "keyboard_key": "R",
+        "drunkdeer_key": "R",
+        "controller": "LEFT_BUMPER",
+        "description": "Reset/Back on Track"
+      },
+      "FastFavToggle": {
+        "keyboard_key": "F",
+        "drunkdeer_key": "F",
+        "controller": "RIGHT_BUMPER",
+        "description": "Fast Fav Toggle"
+      },
+      "NextCam": {
+        "keyboard_key": "V",
+        "drunkdeer_key": "V",
+        "controller": "DPAD_DOWN",
+        "description": "Change Camera"
+      },
+      "LightCallHorn": {
+        "keyboard_key": "H",
+        "drunkdeer_key": "H",
+        "controller": "DPAD_UP",
+        "description": "Horn/Flash Lights"
+      },
+      "MainMenu": {
+        "keyboard_key": "ESCAPE",
+        "drunkdeer_key": "ESC",
+        "controller": "START_BUTTON",
+        "description": "Pause Menu"
+      }
+    }
+  }
+}

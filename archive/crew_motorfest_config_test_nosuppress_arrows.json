@@ -1,0 +1,156 @@
+{
+  "game": "The Crew Motorfest",
+  "description": "TEST - Arrow keys NOT suppressed to test if that's the issue",
+  "suppression": {
+    "enabled": true,
+    "toggle_key": "f12",
+    "description": "Press F12 to toggle keyboard suppression ON/OFF while running"
+  },
+  "controller_mappings": {
+    "analog": {
+      "RoadThrottle": {
+        "keyboard_key": "Z",
+        "drunkdeer_key": "W",
+        "controller": "RIGHT_TRIGGER",
+        "controller_button": "RT",
+        "description": "Throttle/Accelerate"
+      },
+      "RoadBrake": {
+        "keyboard_key": "S",
+        "drunkdeer_key": "S",
+        "controller": "LEFT_TRIGGER",
+        "controller_button": "LT",
+        "description": "Brake"
+      },
+      "RoadSteerLeft": {
+        "keyboard_key": "Q",
+        "drunkdeer_key": "A",
+        "controller": "LEFT_STICK_X_NEGATIVE",
+        "controller_button": "LS Left",
+        "description": "Steer Left"
+      },
+      "RoadSteerRight": {
+        "keyboard_key": "D",
+        "drunkdeer_key": "D",
+        "controller": "LEFT_STICK_X_POSITIVE",
+        "controller_button": "LS Right",
+        "description": "Steer Right"
+      },
+      "LookLeft": {
+        "keyboard_key": "LEFT",
+        "drunkdeer_key": "ARROW_LEFT_PHYSICAL",
+        "drunkdeer_index": 119,
+        "controller": "RIGHT_STICK_X_NEGATIVE",
+        "controller_button": "RS Left",
+        "description": "Camera/Look Left (Physical LEFT = Index 119)",
+        "suppress": false
+      },
+      "LookRight": {
+        "keyboard_key": "RIGHT",
+        "drunkdeer_key": "ARROW_RIGHT_PHYSICAL",
+        "drunkdeer_index": 121,
+        "controller": "RIGHT_STICK_X_POSITIVE",
+        "controller_button": "RS Right",
+        "description": "Camera/Look Right (Physical RIGHT = Index 121)",
+        "suppress": false
+      },
+      "LookUp": {
+        "keyboard_key": "UP",
+        "drunkdeer_key": "ARROW_UP_PHYSICAL",
+        "drunkdeer_index": 98,
+        "controller": "RIGHT_STICK_Y_POSITIVE",
+        "controller_button": "RS Up",
+        "description": "Camera/Look Up (Physical UP = Index 98)",
+        "suppress": false
+      },
+      "LookDown": {
+        "keyboard_key": "DOWN",
+        "drunkdeer_key": "ARROW_DOWN_PHYSICAL",
+        "drunkdeer_index": 120,
+        "controller": "RIGHT_STICK_Y_NEGATIVE",
+        "controller_button": "RS Down",
+        "description": "Camera/Look Down (Physical DOWN = Index 120)",
+        "suppress": false
+      }
+    },
+    "buttons": {
+      "Nitro": {
+        "keyboard_key": "LSHIFT",
+        "drunkdeer_key": "SHF_L",
+        "controller": "A_BUTTON",
+        "controller_button": "A",
+        "description": "Nitro Boost"
+      },
+      "BackOnTrack": {
+        "keyboard_key": "R",
+        "drunkdeer_key": "R",
+        "controller": "Y_BUTTON",
+        "controller_button": "Y",
+        "description": "Reset/Back on Track"
+      },
+      "RoadHandBrake": {
+        "keyboard_key": "SPACE",
+        "drunkdeer_key": "SPACE",
+        "controller": "X_BUTTON",
+        "controller_button": "X",
+        "description": "Handbrake"
+      },
+      "RoadGearUp": {
+        "keyboard_key": "E",
+        "drunkdeer_key": "E",
+        "controller": "RIGHT_BUMPER",
+        "controller_button": "RB",
+        "description": "Shift Up"
+      },
+      "RoadGearDown": {
+        "keyboard_key": "A",
+        "drunkdeer_key": "A",
+        "controller": "LEFT_BUMPER",
+        "controller_button": "LB",
+        "description": "Shift Down"
+      },
+      "LightCallHorn": {
+        "keyboard_key": "H",
+        "drunkdeer_key": "H",
+        "controller": "RIGHT_STICK_CLICK",
+        "controller_button": "RS Click",
+        "description": "Horn/Flash Lights"
+      },
+      "PlayerAssistant": {
+        "keyboard_key": "C",
+        "drunkdeer_key": "C",
+        "controller": "DPAD_UP",
+        "controller_button": "D-Pad Up",
+        "description": "Personal Assistant"
+      },
+      "NextCam": {
+        "keyboard_key": "V",
+        "drunkdeer_key": "V",
+        "controller": "DPAD_DOWN",
+        "controller_button": "D-Pad Down",
+        "description": "Change Camera"
+      },
+      "LaunchPhotoMode": {
+        "keyboard_key": "P",
+        "drunkdeer_key": "P",
+        "controller": "DPAD_RIGHT",
+        "controller_button": "D-Pad Right",
+        "description": "Photo Mode"
+      },
+      "MainMenu": {
+        "keyboard_key": "ESCAPE",
+        "drunkdeer_key": "ESC",
+        "controller": "START_BUTTON",
+        "controller_button": "Menu/Start",
+        "description": "Pause Menu"
+      },
+      "FastFavToggle": {
+        "keyboard_key": "F",
+        "drunkdeer_key": "F",
+        "controller": "RIGHT_STICK_Y_NEGATIVE_BUTTON",
+        "controller_button": "RS Down (Hold)",
+        "description": "Fast Fav Toggle"
+      }
+    }
+  }
+}
