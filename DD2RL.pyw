@@ -136,7 +136,7 @@ class DrunkDeerController:
         self.key_name_to_index = self._build_key_map()
         
         self.deadzone_min = 2
-        self.deadzone_max = 36
+        self.deadzone_max = 40
         self.poll_interval = 0.005
         
     def _build_key_map(self) -> Dict[str, int]:
@@ -622,7 +622,7 @@ class DrunkDeerGUI:
                    width=10).grid(row=0, column=1, padx=5)
         
         ttk.Label(settings_frame, text="Deadzone Max:").grid(row=0, column=2, sticky=tk.W, padx=(20, 0))
-        self.deadzone_max_var = tk.IntVar(value=36)
+        self.deadzone_max_var = tk.IntVar(value=40)
         ttk.Spinbox(settings_frame, from_=20, to=40, textvariable=self.deadzone_max_var, 
                    width=10).grid(row=0, column=3, padx=5)
         
