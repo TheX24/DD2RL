@@ -20,8 +20,7 @@ Run the script as Administrator if you want keyboard suppression to work.
 
 ## Quick Start
 
-1. Run the app:
-  DD2RL.exe
+1. Run the app
 
 2. Click Browse to select your config JSON file
 
