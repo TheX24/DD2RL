@@ -1,0 +1,62 @@
+name: Build EXE and Publish Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-release:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if exist requirements.txt (
+            pip install -r requirements.txt
+          ) else (
+            pip install pyinstaller
+          )
+
+      - name: Build EXE with PyInstaller
+        run: |
+          pyinstaller --onefile --noconsole DD2RL.py
+        # adjust entrypoint (main.py) and options as needed
+
+      - name: Rename and zip executable
+        run: |
+          mkdir dist_zip
+          powershell Compress-Archive dist\DD2RL.exe dist_zip\DD2RL-${{ github.ref_name }}.zip
+
+      - name: Create GitHub Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref_name }}
+          release_name: DD2RL ${{ github.ref_name }}
+          draft: false
+          prerelease: false
+
+      - name: Upload EXE asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: dist_zip/DD2RL-${{ github.ref_name }}.zip
+          asset_name: DD2RL-${{ github.ref_name }}.zip
+          asset_content_type: application/zip
