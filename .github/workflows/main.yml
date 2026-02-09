@@ -32,6 +32,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
+          pip install vgamepad-0.1.0-py3-none-any.whl
           pip install -r requirements.txt
 
       - name: Build EXE with PyInstaller
