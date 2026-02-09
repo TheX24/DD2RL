@@ -1,0 +1,5 @@
+hidapi
+vgamepad
+keyboard
+sv-ttk
+pyinstaller
