@@ -14,23 +14,29 @@ Use your DrunkDeer G75 magnetic keyboard as a virtual Xbox 360 controller for ga
 
 - Windows
 - DrunkDeer G75
+- Python 3.x
+- Packages: pip install hidapi vgamepad keyboard sv-ttk
 - ViGEmBus driver: install from official ViGEmBus releases
 
 Run the script as Administrator if you want keyboard suppression to work.
 
-## Quick Start
+## Quick Start (GUI)
 
-1. Run the app
+1. Install dependencies:
+   pip install hidapi vgamepad keyboard sv-ttk
 
-2. Click Browse to select your config JSON file
+2. Run the GUI:
+   python DD2RL.pyw
 
-3. Click Start to enable the controller
+3. Click Browse to select your config JSON file
 
-4. Press F12 to toggle between:
+4. Click Start to enable the controller
+
+5. Press F12 to toggle between:
    - OFF = Keyboard mode (controller disabled)
    - ON = Controller mode (keyboard suppressed)
 
-5. Click Stop when done
+6. Click Stop when done
 
 ## Toggle Mode Explained
 
@@ -79,5 +85,5 @@ Analog too sensitive/insensitive:
   - Adjust Deadzone Max (lower = more sensitive)
   - Adjust Deadzone Min (higher = less sensitive)
 
-For config documentation see the wiki\
+For config documentation see DOCS.md\
 Made by my beloved Claude Sonnet 4.5

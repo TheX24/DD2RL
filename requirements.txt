@@ -1,4 +1,0 @@
-hidapi
-keyboard
-sv-ttk
-pyinstaller
